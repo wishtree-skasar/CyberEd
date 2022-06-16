@@ -1,0 +1,83 @@
+/* login page */
+.login {
+  background-image: url("../images/Mask\ Group\ 1.png");
+  object-fit: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.login-wrapper {
+  display: flex;
+  color: #fff;
+}
+.login-left {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.login-form {
+  transform: translateY(50%);
+}
+
+label {
+  display: block;
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 13px;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: normal;
+}
+input {
+  color: #fff;
+  display: block;
+  background: transparent;
+  border: none;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  width: 100%;
+  width: 555px;
+  height: 40px;
+  padding-left: 20px;
+}
+.forget-link {
+  display: block;
+  width: 100%;
+  text-align: right;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 10px;
+}
+
+/* forget password page */
+.reset-btn {
+  margin-top: 40px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Reset Password */
+.get-reset-link {
+  margin-top: 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+.reset-info {
+  max-width: 519px;
+}
+.login-link {
+  display: inline-block;
+  color: #fff;
+  margin-top: 40px;
+  text-decoration: none;
+}
+.login-back {
+  display: block;
+  color: #fff;
+  margin-top: 40px;
+}

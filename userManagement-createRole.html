@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEd-Login</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.min.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/userManagement.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="home-logo">
+                    <p class="logo">Cyber<span class="logo-ed">Ed</span><span class="logo-io">.io</span></p>
+                    <div class="login-user"><i class="fa-solid fa-circle-user"></i></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="main-wrapper">
+                    <div class="navbar">
+                        <div class="navigation">
+                            <ul class="nav-list">
+                                 <li><a href="home-page1.html"><i class="fa-solid fa-tree"></i></a>
+                                     <span class="tooltiptext">Dashboard</span></li>
+                                 <li><a href="userManagement.html"><i class="fa-solid fa-user"></i></a>
+                                     <span class="tooltiptext">User Management</span></li>
+                                 <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
+                                     <span class="tooltiptext">Manage Categories</span></li>
+                                 <li><a href="#"><i class="fa-solid fa-file-lines"></i></a>
+                                     <span class="tooltiptext">Manage Course</span></li>
+                                 <li><a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                                     <span class="tooltiptext">Bookmark</span></li>
+                                 <li><a href="manageInstructors.html"><i class="fa-solid fa-user"></i></a>
+                                     <span class="tooltiptext">Manage Instructors</span></li>
+                                 <li><a href="#"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                                     <span class="tooltiptext">Manage</span></li>
+                                 <li><a href="#"><i class="fa-solid fa-folder"></i></a>
+                                     <span class="tooltiptext">Manage</span></li>
+                                 <li><a href="#"><i class="fa-solid fa-gear"></i></a>
+                                     <span class="tooltiptext">Manage</span></li>
+                                 <li><a href="#"><i class="fa-solid fa-bullhorn"></i></a>
+                                     <span class="tooltiptext">Manage</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <h1 class="page-heading">USER MANAGEMENT</h1>
+                        <div class="page-content">
+                            <h2 class="back-link"><a href="userManagement.html"><i class="fa-solid fa-angle-left"></i>
+                                    Back</a></h2>
+                            <h2 class="subpage-heading">Create A Role</h2>
+                            <form>
+                                <div class="create-form-element">
+                                    <div class="form-label">
+                                        <label>User Role Title *</label>
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="text" id="role-title" placeholder="Special instructor" />
+                                    </div>
+                                </div>
+                                <div class="create-form-element">
+                                    <div class="form-label">
+                                        <label>Description</label>
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="text" id="description"
+                                            placeholder="Description comes here with a character limit." />
+                                    </div>
+                                </div>
+                                <div class="create-form-element">
+                                    <div class="form-label">
+                                        <label>Courses *</label>
+                                    </div>
+                                    <div class="form-input">
+                                        <div class="courses">
+                                            <input type="checkbox" id="Create" name="create" />
+                                            <label for="create">Create</label>
+                                            <input type="checkbox" id="Edit" name="edit" />
+                                            <label for="edit">Edit</label>
+                                            <input type="checkbox" id="Review" name="review" />
+                                            <label for="review">Review</label>
+                                            <input type="checkbox" id="Publish" name="publish" />
+                                            <label for="publish">Publish</label>
+                                            <input type="checkbox" id="Hide" name="hide" />
+                                            <label for="hide">Hide</label>
+                                            <input type="checkbox" id="Delete" name="delete" />
+                                            <label for="delete">Delete</label>
+                                            <input type="checkbox" id="All" name="all" />
+                                            <label for="all">All</label>
+                                            <input type="checkbox" id="None" name="none" />
+                                            <label for="none">None</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="create-form-element">
+                                    <div class="form-label">
+                                        <label>Learning Path *</label>
+                                    </div>
+                                    <div class="form-input">
+                                        <div class="learning-path">
+                                            <input type="checkbox" id="Create" name="create" />
+                                            <label for="create">Create</label>
+                                            <input type="checkbox" id="Edit" name="edit" />
+                                            <label for="edit">Edit</label>
+                                            <input type="checkbox" id="Review" name="review" />
+                                            <label for="review">Review</label>
+                                            <input type="checkbox" id="Publish" name="publish" />
+                                            <label for="publish">Publish</label>
+                                            <input type="checkbox" id="Hide" name="hide" />
+                                            <label for="hide">Hide</label>
+                                            <input type="checkbox" id="Delete" name="delete" />
+                                            <label for="delete">Delete</label>
+                                            <input type="checkbox" id="All" name="all" />
+                                            <label for="all">All</label>
+                                            <input type="checkbox" id="None" name="none" />
+                                            <label for="none">None</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="create-form-element">
+                                    <div class="form-label">
+                                        <label>Instructor Request Approval *</label>
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="radio" name="approval" />Yes
+                                        <input type="radio" name="approval" />No
+                                    </div>
+                                </div>
+                                <div class="create-form-element">
+                                    <div class="form-label">
+                                        <label>Group Access *</label>
+                                    </div>
+                                    <div class="form-input">
+                                        <div class="group-access">
+                                            <input type="checkbox" id="Create" name="create" />
+                                            <label for="create">Create</label>
+                                            <input type="checkbox" id="Edit" name="edit" />
+                                            <label for="edit">Edit</label>
+                                            <input type="checkbox" id="Approve-Reject" name="ApproveReject" />
+                                            <label for="ApproveReject">Approve / Reject</label><br>
+                                            <input type="checkbox" id="AddMember" name="AddMember" />
+                                            <label for="AddMember">Add Member</label>
+                                            <input type="checkbox" id="RemoveMember" name="RemoveMember" />
+                                            <label for="RemoveMember">Remove Member</label>
+                                            <input type="checkbox" id="All" name="all" />
+                                            <label for="all">All</label>
+                                            <input type="checkbox" id="None" name="none" />
+                                            <label for="none">None</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="create-form-element">
+                                    <div class="form-label"></div>
+                                    <div class="form-input" style="text-align: right;">
+                                        <button type="submit" class="create-role-btn"><a href="userManagement.html">Save
+                                                Role</a></button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

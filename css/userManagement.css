@@ -1,0 +1,267 @@
+.user-management-serach-box {
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+  text-align: center;
+}
+.user-management-serach-box input {
+  color: #343434;
+  font-size: 14px;
+  opacity: 0.3;
+  border: none;
+  padding: 5px 57px 5px 20px;
+}
+input:focus-visible {
+  outline: none;
+}
+.user-management-create-role {
+  border-radius: 20px;
+  padding: 5px 20px;
+  background: #06529c;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.4s all;
+}
+.user-management-create-role:hover {
+  background: #fff;
+  color: #06529c;
+  border: 1px solid #06529c;
+}
+.use-management-default-role {
+  background: #cddceb;
+  padding: 5px 20px;
+  color: #06529c;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.4s all;
+  border: 1px solid transparent;
+}
+.use-management-default-role:hover {
+  background: #06529c;
+  color: #cddceb;
+  border: 1px solid rgba(6, 82, 156, 0.2);
+}
+.user-management-tabs {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  /* box-shadow: 0 6px 6px -6px #95989a;
+   */
+  border-bottom: 1px solid #95989a;
+}
+.user-tab1,
+.user-tab2,
+.user-tab3 {
+  flex: 0 0 8%;
+  max-width: 8%;
+  text-align: center;
+  padding-top: 10px;
+  color: #919191;
+}
+.user-tab4 {
+  text-align: right;
+  padding-left: 210px;
+  flex: 0 0 22%;
+  max-width: 22%;
+  padding-top: 10px;
+}
+
+.user-tab6,
+.user-tab5 {
+  text-align: center;
+  flex: 0 0 15%;
+  max-width: 15%;
+  padding-top: 10px;
+}
+
+.user-details-tab td {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #343434;
+  font-weight: 600;
+  /* box-shadow: 0 6px 6px -6px #95989a; */
+  border-bottom: 1px solid #95989a;
+}
+
+.user-details-tab img {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.user-management-table {
+  padding: 0 10px;
+}
+.table-data {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  padding: 20px 0;
+}
+.table-data td {
+  color: #343434;
+  font-size: 14px;
+  padding: 20px 0;
+  border-bottom: 1px solid lightgray;
+}
+.table-data img {
+  padding: 0 10px;
+}
+.actions {
+  text-align: right;
+}
+/*--------------- User Management create role---------------- */
+.back-link {
+  margin: 0;
+  font-size: 12px;
+  padding-top: 21px;
+  padding-bottom: 18px;
+}
+.back-link a {
+  color: #343434;
+  text-decoration: none;
+}
+.subpage-heading {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #06529c;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.create-form-element {
+  display: flex;
+  padding-bottom: 25px;
+}
+.form-label {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.form-input {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.form-label label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #343434;
+}
+#role-title {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 540px;
+}
+#description {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 835px;
+  height: 40px;
+}
+.courses,
+.learning-path {
+  width: 100%;
+  max-width: 900px;
+}
+.courses label,
+.learning-path label,
+.group-access label {
+  display: inline-block;
+  width: 150px;
+  padding-bottom: 10px;
+}
+.group-access {
+  width: 100%;
+  max-width: 722px;
+}
+.create-role-btn {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+}
+.create-role-btn a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  background: #06529c;
+  border-radius: 20px;
+}
+.create-role-btn a:hover {
+  background: #fff;
+  color: #06529c;
+  border: 1px solid #06529c;
+}
+/* View modal */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: 0.25s ease;
+  box-shadow: 0px 0px 6px #00000014;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 5px;
+}
+
+.close-button {
+  float: right;
+  width: 11px;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: #06529c;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.25s ease;
+}
+.modal h2 {
+  color: #06529c;
+  font-size: 20px;
+  font-weight: 600;
+}
+.view-details-wrapper {
+  display: flex;
+}
+.details-label {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.details-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.details-label p {
+  font-size: 14px;
+  color: #343434;
+  font-weight: 600;
+}
+.details-info p {
+  font-size: 14px;
+  color: #343434;
+  font-weight: normal;
+}

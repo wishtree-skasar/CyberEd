@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEd-Login</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.min.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/userManagement.css" />
+    <link rel="stylesheet" href="css/manageCategory.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="home-logo">
+                    <p class="logo">Cyber<span class="logo-ed">Ed</span><span class="logo-io">.io</span></p>
+                    <div class="login-user"><i class="fa-solid fa-circle-user"></i></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="main-wrapper">
+                    <div class="navbar">
+                        <div class="navigation">
+                            <ul class="nav-list">
+                                <li><a href="home-page1.html"><i class="fa-solid fa-tree"></i></a>
+                                    <span class="tooltiptext">Dashboard</span></li>
+                                <li><a href="userManagement.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">User Management</span></li>
+                                <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
+                                    <span class="tooltiptext">Manage Categories</span></li>
+                                <li><a href="#"><i class="fa-solid fa-file-lines"></i></a>
+                                    <span class="tooltiptext">Manage Course</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                                    <span class="tooltiptext">Bookmark</span></li>
+                                <li><a href="manageInstructors.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">Manage Instructors</span></li>
+                                <li><a href="#"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-folder"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-gear"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bullhorn"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <div class="category-heading-wrapper">
+                            <div class="category-heading">
+                                <h1 class="page-heading">MANAGE CATEGORIES</h1>
+                            </div>
+                            <div class="category-option">
+                                <div class="manage-category-serach-box" style="display: inline-block;">
+                                    <input type="text" placeholder="Search category here..." />
+                                </div>
+                                <a class="manage-category-addCategory">
+                                    Add Category</a>
+                            </div>
+                        </div>
+
+                        <div class="page-content">
+                            <table style="width: 100%;padding-bottom: 150px;" cellspacing="0"
+                                class="user-management-table">
+                                <tbody>
+                                    <tr class="user-details-tab">
+                                        <td><input type="checkbox" /></td>
+                                        <td id="no">Sr No.</td>
+                                        <td id="title">Major category<img src="images/Union 1.svg" alt="sort img" />
+                                        </td>
+                                        <td id="users">Created On<img src="images/Union 1.svg" alt="sort img" /></td>
+                                        <td id="created">Subcategory<img src="images/Union 1.svg" alt="sort img" /></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr class="table-data">
+                                        <td><input type="checkbox" /></td>
+                                        <td>1</td>
+                                        <td>Network security</td>
+                                        <td>27/01/2022</td>
+                                        <td>
+                                            <div><span class="category-add-icon">&#43;</span>Add</div>
+                                        </td>
+                                        <td class="actions"><a href="#" class="trigger-category"><img
+                                                    src="images/eye.svg" /></a>
+                                            <a href="#"><img src="images/Group 90.svg" /></a>
+                                            <a href="#"><img src="images/delete.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td><input type="checkbox" /></td>
+                                        <td>2</td>
+                                        <td>Cloud security</td>
+                                        <td>27/01/2022</td>
+                                        <td>
+                                            <div><span class="category-add-icon">&#43;</span>Add</div>
+                                        </td>
+                                        <td class="actions"><a href="#" class="trigger"><img src="images/eye.svg" /></a>
+                                            <a href="#"><img src="images/Group 90.svg" /></a>
+                                            <a href="#"><img src="images/delete.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td><input type="checkbox" /></td>
+                                        <td>3</td>
+                                        <td>Instructor</td>
+                                        <td>27/01/2022</td>
+                                        <td>
+                                            <div><span class="category-add-icon">&#43;</span>Add</div>
+                                        </td>
+                                        <td class="actions"><a href="#" class="trigger"><img src="images/eye.svg" /></a>
+                                            <a href="#"><img src="images/Group 90.svg" /></a>
+                                            <a href="#"><img src="images/delete.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td><input type="checkbox" /></td>
+                                        <td>4</td>
+                                        <td>Internet of Things</td>
+                                        <td>27/01/2022</td>
+                                        <td>
+                                            <div><span class="category-add-icon">&#43;</span>Add</div>
+                                        </td>
+                                        <td class="actions"><a href="#" class="trigger"><img src="images/eye.svg" /></a>
+                                            <a href="#"><img src="images/Group 90.svg" /></a>
+
+                                            <a href="#"><img src="images/delete.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td><input type="checkbox" /></td>
+                                        <td>5</td>
+                                        <td>Applications</td>
+                                        <td>27/01/2022</td>
+                                        <td>
+                                            <div><span class="category-add-icon">&#43;</span>Add</div>
+                                        </td>
+                                        <td class="actions"><a href="#" class="trigger"><img src="images/eye.svg" /></a>
+                                            <a href="#"><img src="images/Group 90.svg" /></a>
+
+                                            <a href="#"><img src="images/delete.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td><input type="checkbox" /></td>
+                                        <td>6</td>
+                                        <td>Policy frameworks</td>
+                                        <td>27/01/2022</td>
+                                        <td>
+                                            <div><span class="category-add-icon">&#43;</span>Add</div>
+                                        </td>
+                                        <td class="actions"><a href="#" class="trigger"><img src="images/eye.svg" /></a>
+                                            <a href="#"><img src="images/Group 90.svg" /></a>
+
+                                            <a href="#"><img src="images/delete.svg" /></a></td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                            <div class="modal-category">
+                                <div class="modal-content">
+                                    <span class="close-button">&times;</span>
+                                    <h2>COURSE DETAILS</h2>
+                                    <div class="view-details-wrapper">
+                                        <div class="courses-details-wrapper">
+                                            <div class="details-label">
+                                                <p>Course title</p>
+                                            </div>
+                                            <div class="details-info">
+                                                <p>Python bootcamp</p>
+                                            </div>
+                                            <div class="details-label">
+                                                <p>Course description</p>
+                                            </div>
+                                            <div class="details-info">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                    enim
+                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                    nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                                                    in
+                                                    culpa qui official deserunt mollit anim id est laborum.</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="course-thumbnail">
+                                            <img src="images/Mask Group 108.png" />
+                                            <p>Course thumbnail</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="view-details-wrapper">
+                                        <div class="courses-details-wrapper">
+                                            <div class="details-label">
+                                                <p>Instructor name</p>
+                                            </div>
+                                            <div class="details-info">
+                                                <p>John Doe</p>
+                                            </div>
+                                            <div class="details-label">
+                                                <p>Course price</p>
+                                            </div>
+                                            <div class="details-info">
+                                                <p>USD 50</p>
+                                            </div>
+                                            <div class="details-label">
+                                                <p>Course tag</p>
+                                            </div>
+                                            <div class="details-info">
+                                                <p>Basic</p>
+                                            </div>
+                                            <div class="details-label">
+                                                <p>Category Info</p>
+                                            </div>
+                                            <div class="details-info">
+                                                <p><a class="category-info-show" href="#">Show</a></p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="course-thumbnail">
+                                            <!-- <video width="320" height="240" controls>
+                                                <source src="images/screencast-nimbusweb.me-2022.06.12-19_46_20.webm"
+                                                    type="video/webm">
+                                                Your browser does not support the video tag.
+                                            </video> -->
+                                            <img src="images/Mask Group 109.png" />
+                                            <p>Instructor intro video</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="view-details-wrapper" id="coursers-detailsInfo">
+                                        <div class="courses-details-wrapper">
+                                            <div class="details-label">
+                                            </div>
+                                            <div class="details-info">
+                                                <h3>Cyber Security Fundamentals</h3>
+                                                <div class="cyber-security-container">
+                                                    <div class="cyber-security-1">Fraud Management and Cybercrime
+                                                    </div>
+                                                    <div class="cyber-security-2">Governance & Risk Management</div>
+                                                    <div class="cyber-security-3">Security Options</div>
+                                                    <div class="cyber-security-4">Endpoint Security</div>
+                                                </div>
+                                                <h3>Governance In Fraud</h3>
+                                                <div class="governance-container">
+                                                    <div class="governance-1">ATM Fraud
+                                                    </div>
+                                                    <div class="governance-2">ACH Fraud</div>
+                                                    <div class="governance-3">Security Options</div>
+                                                    <div class="governance-4">Cybercrime</div>
+                                                    <div class="governance-5">API Security</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="course-thumbnail">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <table class="category-details-table" cellspacing="0">
+                                            <tr class="category-details-header">
+                                                <td>Module no.</td>
+                                                <td>Module name</td>
+                                                <td>Chapter no.</td>
+                                                <td>Chapter name</td>
+                                                <td>Format</td>
+                                                <td>Time</td>
+                                            </tr>
+                                            <tr class="category-details-tableData">
+                                                <td>1</td>
+                                                <td>Basics for beginners</td>
+                                                <td>1</td>
+                                                <td>Install Python IDE</td>
+                                                <td>Video</td>
+                                                <td>9 min</td>
+                                            </tr>
+                                            <tr class="category-details-tableData">
+                                                <td>2</td>
+                                                <td>Basics for beginners</td>
+                                                <td>2</td>
+                                                <td>Python Hello World</td>
+                                                <td>Document</td>
+                                                <td>5 min</td>
+                                            </tr>
+                                            <tr class="category-details-tableData">
+                                                <td>3</td>
+                                                <td>Intermediate</td>
+                                                <td>3</td>
+                                                <td>Python () function</td>
+                                                <td>Video</td>
+                                                <td>30 min</td>
+                                            </tr>
+                                            <tr class="category-details-tableData">
+                                                <td>4</td>
+                                                <td>Intermediate</td>
+                                                <td>4</td>
+                                                <td>Python variables</td>
+                                                <td>Document</td>
+                                                <td>5 min</td>
+                                            </tr>
+                                            <tr class="category-details-tableData">
+                                                <td>5</td>
+                                                <td>Python data structures</td>
+                                                <td>5</td>
+                                                <td>Quiz</td>
+                                                <td>Video</td>
+                                                <td>5 min</td>
+                                            </tr>
+                                            <tr class="category-details-tableData">
+                                                <td>6</td>
+                                                <td>Python data structures</td>
+                                                <td>6</td>
+                                                <td>Python TUPLE</td>
+                                                <td>Document</td>
+                                                <td>5 min</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-add-category">
+                                <div class="modal-content">
+                                    <span class="close-button1">&times;</span>
+                                    <h2>ADD CATEGORY</h2>
+                                    <div class="view-details-wrapper">
+                                        <div class="details-label">
+                                            <label>Category name</label>
+                                        </div>
+                                        <div class="details-info">
+                                            <input type="text" name="category-name" id="category-name" />
+                                        </div>
+                                    </div>
+                                    <div class="view-details-wrapper">
+                                        <div class="details-label">
+                                            <label>Category description</label>
+                                        </div>
+                                        <div class="details-info">
+                                            <textarea name="category-desc" id="category-desc"
+                                                placeholder="Description comes here with a character limit."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="view-details-wrapper">
+                                        <div class="details-label">
+                                            <label>Upload thumbnail</label>
+                                        </div>
+                                        <div class="details-info">
+                                            <div class="category-img-wrapper">
+                                                <div class="categoryImgInput">
+                                                    <input type="file" id="category-img" name="files"
+                                                        style="display: none;" />
+                                                    <label for="category-img"><span
+                                                            class="categoryImg-plus-icon">&#43;</span>
+                                                        Click here to upload or drag an image file here</label>
+                                                    <div id="categoryImg-name"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-details-wrapper">
+                                        <div class="details-label">
+                                        </div>
+                                        <div class="details-info" style="text-align: right;">
+                                            <button type="submit" class="create-category-btn"><a
+                                                    href="manageCategories.html">
+                                                    Add Category</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script>
+        let input = document.getElementById("category-img");
+        let imageName = document.getElementById("categoryImg-name")
+
+        input.addEventListener("change", ()=>{
+        let inputImage = document.querySelector("input[type=file]").files[0];
+
+        imageName.innerText = inputImage.name;
+        })
+    </script>
+</body>
+
+</html>

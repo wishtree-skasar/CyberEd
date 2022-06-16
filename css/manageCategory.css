@@ -1,0 +1,330 @@
+.category-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-right: 20px;
+}
+
+.category-heading {
+  align-self: center;
+}
+.category-option {
+  align-self: flex-end;
+  justify-self: end;
+}
+.manage-category-serach-box input {
+  border: none;
+  padding: 5px 20px;
+}
+.manage-category-serach-box {
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+  padding: 0 20px;
+  padding-left: 10px;
+  width: 100%;
+  max-width: 200px;
+}
+.manage-category-addCategory {
+  border-radius: 20px;
+  padding: 5px 20px;
+  background: #06529c;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.4s all;
+}
+.manage-category-addCategory:hover {
+  background: #fff;
+  color: #06529c;
+  border: 1px solid #06529c;
+}
+.category-add-icon {
+  background: #06529c;
+  color: #fff;
+  width: 20px;
+  text-align: center;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* modal view details */
+.modal-category,
+.modal-add-category {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: 0.25s ease;
+  box-shadow: 0px 0px 6px #00000014;
+}
+.modal-category h2,
+.modal-add-category h2 {
+  color: #06529c;
+  font-size: 20px;
+  font-weight: 600;
+}
+.modal-add-category h2 {
+  padding-bottom: 30px;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  max-width: 1110px;
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 550px;
+}
+.modal-add-category .modal-content {
+  max-width: 791px;
+}
+.close-button,
+.close-button1 {
+  float: right;
+  width: 11px;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: #06529c;
+}
+
+.show-modal,
+.show-addCategory-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.25s ease;
+}
+
+.category-details-table {
+  width: 100%;
+  box-shadow: 0px 0px 6px #00000014;
+  border-radius: 5px;
+  margin-bottom: 48px;
+  margin-top: 30px;
+}
+.category-details-table tr td:first-child {
+  padding-left: 20px;
+}
+.category-details-header td {
+  font-size: 14px;
+  color: #343434;
+  font-weight: 600;
+  border-bottom: 1px solid #d0d0d0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.category-details-tableData td {
+  font-size: 14px;
+  color: #343434;
+  font-weight: normal;
+  padding: 20px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.category-details-table tr:last-child td {
+  border-bottom: none;
+}
+.modal-category .view-details-wrapper {
+  width: 100%;
+  max-width: 1050px;
+  display: flex;
+}
+.modal-category .details-info {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+.courses-details-wrapper {
+  flex: 0 0 calc(70% - 50px);
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+.course-thumbnail {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.details-label {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.course-thumbnail p {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+  color: #343434;
+}
+.category-info-show {
+  text-decoration: none;
+  color: #1b618c;
+  padding: 10px 30px;
+  border: 1px solid #1b618c;
+  border-radius: 30px;
+  transition: 0.4s all;
+}
+.category-info-show:hover {
+  background: #1b618c;
+  color: #fff;
+}
+.cyber-security-1,
+.cyber-security-2,
+.cyber-security-3,
+.cyber-security-4,
+.governance-1,
+.governance-2,
+.governance-3,
+.governance-4,
+.governance-5 {
+  background: #b3d5f2;
+  color: #252525;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.cyber-security-1 {
+  width: 100%;
+  max-width: 296px;
+}
+.cyber-security-2 {
+  width: 100%;
+  max-width: 268px;
+}
+.cyber-security-3 {
+  width: 100%;
+  max-width: 154px;
+}
+.cyber-security-4 {
+  width: 100%;
+  max-width: 161px;
+  margin-top: 20px;
+}
+.cyber-security-2,
+.cyber-security-3 {
+  display: inline;
+}
+.governance-1,
+.governance-2,
+.governance-3,
+.governance-4,
+.governance-5 {
+  width: 100%;
+  max-width: 112px;
+  display: inline-block;
+}
+.governance-3 {
+  max-width: 128px;
+}
+.governance-4,
+.governance-5 {
+  max-width: 123px;
+}
+.modal-category .details-info h3 {
+  color: #343434;
+  font-size: 14px;
+  font-weight: 600;
+}
+#coursers-detailsInfo {
+  display: none;
+  transition: 0.6s all;
+}
+.show-details {
+  display: block;
+}
+.modal-add-category label {
+  color: #343434;
+  font-size: 14px;
+  font-weight: 600;
+}
+.modal-add-category input {
+  border: none;
+  width: 100%;
+  max-width: 540px;
+  border: 1px solid #dedede;
+}
+.modal-add-category .view-details-wrapper {
+  padding-bottom: 30px;
+}
+.modal-add-category .details-info {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+.create-category-btn {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+}
+.create-category-btn a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  background: #06529c;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+.create-category-btn a:hover {
+  background: #fff;
+  color: #06529c;
+  border: 1px solid #06529c;
+}
+#category-name {
+  height: 30px;
+}
+#category-desc {
+  height: 70px;
+  border: none;
+  border: 1px solid #dedede;
+  max-width: 540px;
+  width: 100%;
+}
+#category-desc:focus-visible {
+  outline: none;
+}
+.category-img-wrapper {
+  max-width: 300px;
+  width: 100%;
+  height: 150px;
+  border: 2px dashed #dedede;
+  border-radius: 10px;
+}
+.category-img-wrapper label {
+  color: #9e9e9e;
+  font-size: 14px;
+  width: 100%;
+  max-width: 182px;
+}
+.categoryImg-plus-icon {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: normal;
+}
+.categoryImgInput {
+  width: 100%;
+  max-width: 182px;
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+}
+#categoryImg-name {
+  position: absolute;
+  right: -50px;
+  bottom: -60px;
+}

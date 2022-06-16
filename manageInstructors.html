@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEd-Login</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.min.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/userManagement.css" />
+    <link rel="stylesheet" href="css/manageInstructors.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="home-logo">
+                    <p class="logo">Cyber<span class="logo-ed">Ed</span><span class="logo-io">.io</span></p>
+                    <div class="login-user"><i class="fa-solid fa-circle-user"></i></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="main-wrapper">
+                    <div class="navbar">
+                        <div class="navigation">
+                            <ul class="nav-list">
+                                <li><a href="home-page1.html"><i class="fa-solid fa-tree"></i></a>
+                                    <span class="tooltiptext">Dashboard</span></li>
+                                <li><a href="userManagement.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">User Management</span></li>
+                                <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
+                                    <span class="tooltiptext">Manage Categories</span></li>
+                                <li><a href="#"><i class="fa-solid fa-file-lines"></i></a>
+                                    <span class="tooltiptext">Manage Course</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                                    <span class="tooltiptext">Bookmark</span></li>
+                                <li><a href="manageInstructors.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">Manage Instructors</span></li>
+                                <li><a href="#"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-folder"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-gear"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bullhorn"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <h1 class="page-heading">MANAGE INSTRUCTORS</h1>
+                        <div class="page-content">
+                            <table style="width: 100%;">
+                                <tr class="instructors-tabs">
+                                    <td class="instructor-tab1"><a data-tab-value="#intructorRequests">Manage Instructor
+                                            Requests</a></td>
+                                    <td class="instructor-tab2"><a data-tab-value="#intructorRatings">Manage Instructor
+                                            Ratings</a></td>
+                                    <td class="instructor-tab3">
+                                        <div class="user-management-serach-box">
+                                            <input type="text" placeholder="Search group here..." />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            
+                            <div class="tab-content">
+                                <table style="width: 100%;padding-bottom: 150px;" cellspacing="0"
+                                    class="user-management-table intructor-active" id="intructorRequests" data-tab-info>
+                                    <tbody>
+                                        <tr class="user-details-tab">
+                                            <td><input type="checkbox" /></td>
+                                            <td id="no">Sr No.</td>
+                                            <td id="title">Role title<img src="images/Union 1.svg" alt="sort img" />
+                                            </td>
+                                            <td id="users">No. of Users<img src="images/Union 1.svg" alt="sort img" />
+                                            </td>
+                                            <td id="created">Created On<img src="images/Union 1.svg" alt="sort img" />
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="table-data">
+                                            <td><input type="checkbox" /></td>
+                                            <td>3</td>
+                                            <td>Instructor</td>
+                                            <td>6</td>
+                                            <td>27/01/2022</td>
+                                            <td class="actions"><a href="#" class="trigger"><img
+                                                        src="images/eye.svg" /></a>
+                                                <a href="#"><img src="images/Group 90.svg" /></a>
+                                                <a href="#"><img src="images/delete.svg" /></a></td>
+                                        </tr>
+                                        <tr class="table-data">
+                                            <td><input type="checkbox" /></td>
+                                            <td>4</td>
+                                            <td>Group Manager</td>
+                                            <td>6</td>
+                                            <td>27/01/2022</td>
+                                            <td class="actions"><a href="#" class="trigger"><img
+                                                        src="images/eye.svg" /></a>
+                                                <a href="#"><img src="images/Group 90.svg" /></a>
+
+                                                <a href="#"><img src="images/delete.svg" /></a></td>
+                                        </tr>
+                                        <tr class="table-data">
+                                            <td><input type="checkbox" /></td>
+                                            <td></td>
+                                            <td>Course Manager</td>
+                                            <td>6</td>
+                                            <td>27/01/2022</td>
+                                            <td class="actions"><a href="#" class="trigger"><img
+                                                        src="images/eye.svg" /></a>
+                                                <a href="#"><img src="images/Group 90.svg" /></a>
+
+                                                <a href="#"><img src="images/delete.svg" /></a></td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+
+                                <table style="width: 100%;padding-bottom: 150px;" cellspacing="0"
+                                    class="user-management-table" id="intructorRatings" data-tab-info>
+                                    <tbody>
+                                        <tr class="user-details-tab">
+                                            <td><input type="checkbox" /></td>
+                                            <td id="no">Sr No.</td>
+                                            <td id="title">Role title<img src="images/Union 1.svg" alt="sort img" />
+                                            </td>
+                                            <td id="users">No. of Users<img src="images/Union 1.svg" alt="sort img" />
+                                            </td>
+                                            <td id="created">Created On<img src="images/Union 1.svg" alt="sort img" />
+                                            </td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="table-data">
+                                            <td><input type="checkbox" /></td>
+                                            <td>1</td>
+                                            <td>Admin</td>
+                                            <td>2</td>
+                                            <td>27/01/2022</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="table-data">
+                                            <td><input type="checkbox" /></td>
+                                            <td>2</td>
+                                            <td>Manager</td>
+                                            <td>6</td>
+                                            <td>27/01/2022</td>
+                                            <td class="actions"><a href="#" class="trigger"><img
+                                                        src="images/eye.svg" /></a>
+                                                <a href="#"><img src="images/Group 90.svg" /></a>
+                                                <a href="#"><img src="images/delete.svg" /></a></td>
+                                        </tr>
+                                        <tr class="table-data">
+                                            <td><input type="checkbox" /></td>
+                                            <td>3</td>
+                                            <td>Instructor</td>
+                                            <td>6</td>
+                                            <td>27/01/2022</td>
+                                            <td class="actions"><a href="#" class="trigger"><img
+                                                        src="images/eye.svg" /></a>
+                                                <a href="#"><img src="images/Group 90.svg" /></a>
+                                                <a href="#"><img src="images/delete.svg" /></a></td>
+                                        </tr>
+
+                                        <tr class="table-data">
+                                            <td><input type="checkbox" /></td>
+                                            <td></td>
+                                            <td>Course Manager</td>
+                                            <td>6</td>
+                                            <td>27/01/2022</td>
+                                            <td class="actions"><a href="#" class="trigger"><img
+                                                        src="images/eye.svg" /></a>
+                                                <a href="#"><img src="images/Group 90.svg" /></a>
+
+                                                <a href="#"><img src="images/delete.svg" /></a></td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('intructor-active')
+                })
+                target.classList.add('intructor-active');
+            })
+        })
+    </script>
+
+</body>
+
+</html>
