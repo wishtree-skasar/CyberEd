@@ -94,3 +94,4 @@ function toggleAddCategoryModal() {
 
 triggerAddCategory.addEventListener("click", toggleAddCategoryModal);
 closeAddBtn.addEventListener("click", toggleAddCategoryModal);
+

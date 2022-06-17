@@ -1,0 +1,106 @@
+.course-form-element {
+  display: flex;
+  padding-bottom: 20px;
+}
+.course-form-label {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.course-form-input {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.manageCourse-form {
+  padding-top: 30px;
+}
+.course-form-element label {
+  font-size: 14px;
+  color: #343434;
+  font-weight: 600;
+}
+.course-form-element input,
+.course-form-element textarea {
+  border: none;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+}
+.course-form-element select {
+  border: none;
+  background: none;
+  border: 1px solid #dedede;
+}
+.course-form-element select:focus-visible,
+.course-form-element textarea:focus-visible {
+  outline: none;
+}
+#manageCourse-courseTitle,
+#manageCourse-courseCategory,
+#manageCourse-courseSubCategory,
+#manageCourse-courseInstructor,
+#manageCourse-coursePrice {
+  width: 100%;
+  max-width: 540px;
+  height: 40px;
+}
+#manageCourse-courseDesc,
+#manageCourse-courseRequirement {
+  width: 100%;
+  max-width: 835px;
+  height: 80px;
+}
+.course-thumnail-wrapper,
+.course-videoPreview-wrapper {
+  max-width: 300px;
+  width: 100%;
+  height: 150px;
+  border: 2px dashed #dedede;
+  border-radius: 10px;
+}
+.course-thumnail-wrapper label,
+.course-videoPreview-wrapper label {
+  color: #9e9e9e;
+  font-size: 14px;
+  width: 100%;
+  max-width: 182px;
+}
+.course-plus-icon {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: normal;
+}
+.courseThumnailInput,
+.courseVideoPreviewInput {
+  width: 100%;
+  max-width: 182px;
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+}
+#courseThumnail-name,
+#courseVideoPreview-name {
+  position: absolute;
+  right: -90px;
+  bottom: -25px;
+}
+.saveCourseBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 20px;
+  background: #06529c;
+  border-radius: 20px;
+  text-align: right;
+  border: 1px solid transparent;
+  transition: 0.4s all;
+}
+.saveCourseBtn:hover {
+  border: 1px solid #06529c;
+  color: #06529c;
+  background: #fff;
+}
+.manageCourse-form div.course-form-element:last-child .course-form-input {
+  text-align: right;
+}

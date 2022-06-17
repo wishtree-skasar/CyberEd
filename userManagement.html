@@ -37,26 +37,26 @@
                     <div class="navbar">
                         <div class="navigation">
                             <ul class="nav-list">
-                                 <li><a href="home-page1.html"><i class="fa-solid fa-tree"></i></a>
-                                     <span class="tooltiptext">Dashboard</span></li>
-                                 <li><a href="userManagement.html"><i class="fa-solid fa-user"></i></a>
-                                     <span class="tooltiptext">User Management</span></li>
-                                 <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
-                                     <span class="tooltiptext">Manage Categories</span></li>
-                                 <li><a href="#"><i class="fa-solid fa-file-lines"></i></a>
-                                     <span class="tooltiptext">Manage Course</span></li>
-                                 <li><a href="#"><i class="fa-solid fa-bookmark"></i></a>
-                                     <span class="tooltiptext">Bookmark</span></li>
-                                 <li><a href="manageInstructors.html"><i class="fa-solid fa-user"></i></a>
-                                     <span class="tooltiptext">Manage Instructors</span></li>
-                                 <li><a href="#"><i class="fa-solid fa-square-poll-vertical"></i></a>
-                                     <span class="tooltiptext">Manage</span></li>
-                                 <li><a href="#"><i class="fa-solid fa-folder"></i></a>
-                                     <span class="tooltiptext">Manage</span></li>
-                                 <li><a href="#"><i class="fa-solid fa-gear"></i></a>
-                                     <span class="tooltiptext">Manage</span></li>
-                                 <li><a href="#"><i class="fa-solid fa-bullhorn"></i></a>
-                                     <span class="tooltiptext">Manage</span></li>
+                                <li><a href="home-page1.html"><i class="fa-solid fa-tree"></i></a>
+                                    <span class="tooltiptext">Dashboard</span></li>
+                                <li><a href="userManagement.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">User Management</span></li>
+                                <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
+                                    <span class="tooltiptext">Manage Categories</span></li>
+                                <li><a href="manageCourses.html"><i class="fa-solid fa-file-lines"></i></a>
+                                    <span class="tooltiptext">Manage Course</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                                    <span class="tooltiptext">Bookmark</span></li>
+                                <li><a href="manageInstructors.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">Manage Instructors</span></li>
+                                <li><a href="#"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-folder"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-gear"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bullhorn"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
                             </ul>
                         </div>
                     </div>
@@ -66,9 +66,10 @@
                         <div class="page-content">
                             <table style="width: 100%;">
                                 <tr class="user-management-tabs">
-                                    <td class="user-tab1"><a>User Roles</a></td>
-                                    <td class="user-tab2"><a>Users</a></td>
-                                    <td class="user-tab3"><a>Enterprises</a></td>
+                                    <td class="user-tab1"><a data-tab-value="#user-roles"
+                                            class="userManagement-active-tab">User Roles</a></td>
+                                    <td class="user-tab2"><a data-tab-value="#users-tab">Users</a></td>
+                                    <td class="user-tab3"><a data-tab-value="#enterprise">Enterprises</a></td>
                                     <td class="user-tab4">
                                         <div class="user-management-serach-box">
                                             <input type="text" placeholder="Search role here..." />
@@ -81,16 +82,20 @@
                                             Roles</a></td>
                                 </tr>
                             </table>
-                            <table style="width: 100%;padding-bottom: 150px;" cellspacing="0"
-                                class="user-management-table">
+                            <table style="width: 100%;padding-bottom: 150px;" data-tab-info cellspacing="0"
+                                id="user-roles" class="user-management-table 
+                                userManagement-active">
                                 <tbody>
                                     <tr class="user-details-tab">
-                                        <td><input type="checkbox" /></td>
-                                        <td id="no">Sr No.</td>
-                                        <td id="title">Role title<img src="images/Union 1.svg" alt="sort img" /></td>
-                                        <td id="users">No. of Users<img src="images/Union 1.svg" alt="sort img" /></td>
-                                        <td id="created">Created On<img src="images/Union 1.svg" alt="sort img" /></td>
-                                        <td></td>
+                                        <td id="user-manament-select"><input type="checkbox" /></td>
+                                        <td id="usermanagement-no">Sr No.</td>
+                                        <td id="usermanagement-title">Role title<img src="images/Union 1.svg"
+                                                alt="sort img" /></td>
+                                        <td id="usermanagement-users">No. of Users<img src="images/Union 1.svg"
+                                                alt="sort img" /></td>
+                                        <td id="usermanagement-created">Created On<img src="images/Union 1.svg"
+                                                alt="sort img" /></td>
+                                        <td id="usermanagement-action"></td>
                                     </tr>
 
                                     <tr class="table-data">
@@ -146,6 +151,19 @@
 
                                 </tbody>
 
+                            </table>
+
+                            <table style="width: 100%;padding-bottom: 150px;" cellspacing="0" id="users-tab"
+                                class="user-management-table" data-tab-info>
+                                <tr>
+                                    <td>No REsult found</td>
+                                </tr>
+                            </table>
+                            <table style="width: 100%;padding-bottom: 150px;" cellspacing="0" id="enterprise"
+                                class="user-management-table" data-tab-info>
+                                <tr>
+                                    <td>No REsult found</td>
+                                </tr>
                             </table>
                             <div class="modal">
                                 <div class="modal-content">
@@ -218,7 +236,30 @@
 
     <script src="./js/script.js"></script>
     <script>
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
 
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('userManagement-active')
+                })
+                target.classList.add('userManagement-active');
+                let table = document.getElementsByClassName('userManagement-active');
+
+            })
+        })
+        $(".user-management-tabs td a").on("click", function () {
+
+            $(".user-management-tabs td a").each(() => {
+                $(".user-management-tabs td a").removeClass("userManagement-active-tab");
+            });
+            $(this).addClass("userManagement-active-tab");
+        });
     </script>
 
 </body>

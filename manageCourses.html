@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEd-Login</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.min.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/userManagement.css" />
+    <link rel="stylesheet" href="css/manageCourses.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="home-logo">
+                    <p class="logo">Cyber<span class="logo-ed">Ed</span><span class="logo-io">.io</span></p>
+                    <div class="login-user"><i class="fa-solid fa-circle-user"></i></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="main-wrapper">
+                    <div class="navbar">
+                        <div class="navigation">
+                            <ul class="nav-list">
+                                <li><a href="home-page1.html"><i class="fa-solid fa-tree"></i></a>
+                                    <span class="tooltiptext">Dashboard</span></li>
+                                <li><a href="userManagement.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">User Management</span></li>
+                                <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
+                                    <span class="tooltiptext">Manage Categories</span></li>
+                                <li><a href="manageCourses.html"><i class="fa-solid fa-file-lines"></i></a>
+                                    <span class="tooltiptext">Manage Course</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                                    <span class="tooltiptext">Bookmark</span></li>
+                                <li><a href="manageInstructors.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">Manage Instructors</span></li>
+                                <li><a href="#"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-folder"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-gear"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bullhorn"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <h1 class="page-heading">MANAGE COURSES > CREATE A COURSE</h1>
+                        <div class="page-content">
+                            <form class="manageCourse-form">
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Course title *</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <input type="text" id="manageCourse-courseTitle" />
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Course description *</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <textarea id="manageCourse-courseDesc"></textarea>
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Course requirements *</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <textarea id="manageCourse-courseRequirement"></textarea>
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Major category *</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <input type="text" id="manageCourse-courseCategory" />
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Sub category *</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <input type="text" id="manageCourse-courseSubCategory" />
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Instructor name *</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <select id="manageCourse-courseInstructor">
+                                            <option>Instructor 1</option>
+                                            <option>Instructor 2</option>
+                                            <option>Instructor 3</option>
+                                            <option>Instructor 4</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Course thumbnail *</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <div class="course-thumnail-wrapper">
+                                            <div class="courseThumnailInput">
+                                                <input type="file" id="courseThumnail-img" name="files"
+                                                    style="display: none;" />
+                                                <label for="courseThumnail-img"><span
+                                                        class="course-plus-icon">&#43;</span>
+                                                    Click here to upload or drag an image file here</label>
+                                                <div id="courseThumnail-name"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Course video preview</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <div class="course-videoPreview-wrapper">
+                                            <div class="courseVideoPreviewInput">
+                                                <input type="file" id="courseVideoPreview-img" name="files"
+                                                    style="display: none;" />
+                                                <label for="courseVideoPreview-img"><span
+                                                        class="course-plus-icon">&#43;</span>
+                                                    Click here to upload or drag an image file here</label>
+                                                <div id="courseVideoPreview-name"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Certificate</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <input type="radio" id="yes" name="fav_language">
+                                        <label for="yes" style="font-weight: normal;">Yes</label>
+                                        <input type="radio" id="no" name="fav_language">
+                                        <label for="no" style="font-weight: normal;">No</label>
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label>Course price</label>
+                                    </div>
+                                    <div class="course-form-input">
+                                        <input type="text" id="manageCourse-coursePrice" />
+                                        <input type="checkbox" id="free" name="price">
+                                        <label for="free" style="font-weight: normal;"> Free</label>
+                                        <input type="checkbox" id="basic" name="price">
+                                        <label for="basic" style="font-weight: normal;"> Basic</label>
+                                        <input type="checkbox" id="premium" name="price">
+                                        <label for="premium" style="font-weight: normal;"> Premium</label>
+                                    </div>
+                                </div>
+                                <div class="course-form-element">
+                                    <div class="course-form-label">
+                                        <label></label>
+                                    </div>
+                                    <div class="course-form-input saveBtn">
+                                        <button class="saveCourseBtn">Save As Draft</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

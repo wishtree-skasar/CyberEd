@@ -44,7 +44,7 @@
                                     <span class="tooltiptext">User Management</span></li>
                                 <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
                                     <span class="tooltiptext">Manage Categories</span></li>
-                                <li><a href="#"><i class="fa-solid fa-file-lines"></i></a>
+                                <li><a href="manageCourses.html"><i class="fa-solid fa-file-lines"></i></a>
                                     <span class="tooltiptext">Manage Course</span></li>
                                 <li><a href="#"><i class="fa-solid fa-bookmark"></i></a>
                                     <span class="tooltiptext">Bookmark</span></li>
@@ -67,138 +67,158 @@
                         <div class="page-content">
                             <table style="width: 100%;">
                                 <tr class="instructors-tabs">
-                                    <td class="instructor-tab1"><a data-tab-value="#intructorRequests">Manage Instructor
+                                    <td class="instructor-tab1"><a data-tab-value="#intructorRequests"
+                                            class="intructor-active-tab">Manage Instructor
                                             Requests</a></td>
                                     <td class="instructor-tab2"><a data-tab-value="#intructorRatings">Manage Instructor
                                             Ratings</a></td>
                                     <td class="instructor-tab3">
-                                        <div class="user-management-serach-box">
+                                        <div class="manageIntructor-serach-box">
                                             <input type="text" placeholder="Search group here..." />
                                         </div>
                                     </td>
                                 </tr>
                             </table>
 
-                            
-                            <div class="tab-content">
-                                <table style="width: 100%;padding-bottom: 150px;" cellspacing="0"
-                                    class="user-management-table intructor-active" id="intructorRequests" data-tab-info>
-                                    <tbody>
-                                        <tr class="user-details-tab">
-                                            <td><input type="checkbox" /></td>
-                                            <td id="no">Sr No.</td>
-                                            <td id="title">Role title<img src="images/Union 1.svg" alt="sort img" />
-                                            </td>
-                                            <td id="users">No. of Users<img src="images/Union 1.svg" alt="sort img" />
-                                            </td>
-                                            <td id="created">Created On<img src="images/Union 1.svg" alt="sort img" />
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr class="table-data">
-                                            <td><input type="checkbox" /></td>
-                                            <td>3</td>
-                                            <td>Instructor</td>
-                                            <td>6</td>
-                                            <td>27/01/2022</td>
-                                            <td class="actions"><a href="#" class="trigger"><img
-                                                        src="images/eye.svg" /></a>
-                                                <a href="#"><img src="images/Group 90.svg" /></a>
-                                                <a href="#"><img src="images/delete.svg" /></a></td>
-                                        </tr>
-                                        <tr class="table-data">
-                                            <td><input type="checkbox" /></td>
-                                            <td>4</td>
-                                            <td>Group Manager</td>
-                                            <td>6</td>
-                                            <td>27/01/2022</td>
-                                            <td class="actions"><a href="#" class="trigger"><img
-                                                        src="images/eye.svg" /></a>
-                                                <a href="#"><img src="images/Group 90.svg" /></a>
+                            <table style="width: 100%;padding-bottom: 150px;" cellspacing="0" class="intructor-active"
+                                id="intructorRequests" data-tab-info>
+                                <tbody>
+                                    <tr class="user-details-tab">
+                                        <td id="requestor-name">Requestor Name<img src="images/Union 1.svg"
+                                                alt="sort img" />
+                                        </td>
+                                        <td id="date-request">Date of Request<img src="images/Union 1.svg"
+                                                alt="sort img" />
+                                        </td>
+                                        <td id="email">Email<img src="images/Union 1.svg" alt="sort img" />
+                                        </td>
+                                        <td id="category">Category<img src="images/Union 1.svg" alt="sort img" />
+                                        </td>
+                                        <td id="details">Brief details of course<img src="images/Union 1.svg"
+                                                alt="sort img" />
+                                        </td>
+                                        <td id="instructor-action"></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Anton Chekov</td>
+                                        <td>23 / 1 / 2022</td>
+                                        <td class="instructor-email">anton@website.com</td>
+                                        <td>
+                                            <div class="instructor-category-info">Development & coding</div>
+                                            <div class="instructor-category-no">3</div>
+                                        </td>
+                                        <td class="instructor-briefDetails">
+                                            Lorem ipsum dolor semit nulla ut
+                                            sapien ui Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+                                            neque perspiciatis animi mollitia ad consequatur delectus, quasi culpa amet
+                                            doloremque excepturi soluta fugit eligendi fuga explicabo incidunt,
+                                            molestias debitis labore....</td>
+                                        <td class="actions"><a href="#" class="trigger"><img
+                                                    src="images/Group 268.svg" /></a>
+                                            <a href="#" class="instructor-delete"><img
+                                                    src="images/icons-utility-close-copy.svg" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Emily Blunt</td>
+                                        <td>23 / 1 / 2022</td>
+                                        <td class="instructor-email">emily@edge.com</td>
+                                        <td>
+                                            <div class="instructor-category-info">Development & coding</div>
+                                            <div class="instructor-category-no">22</div>
+                                        </td>
+                                        <td class="instructor-briefDetails">
+                                            Lorem ipsum dolor semit nulla ut
+                                            sapien ui Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Deleniti
+                                            neque perspiciatis animi mollitia ad consequatur delectus, quasi culpa amet
+                                            doloremque excepturi soluta fugit eligendi fuga explicabo incidunt,
+                                            molestias debitis labore....</td>
+                                        <td class="actions"><a href="#" class="trigger"><img
+                                                    src="images/Group 268.svg" /></a>
+                                            <a href="#" class="instructor-delete"><img
+                                                    src="images/icons-utility-close-copy.svg" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Jim Kirk</td>
+                                        <td>23 / 1 / 2022</td>
+                                        <td class="instructor-email">jim@enterprise.com</td>
+                                        <td>
+                                            <div class="instructor-category-info">Development & coding</div>
+                                            <div class="instructor-category-no">3</div>
+                                        </td>
+                                        <td class="instructor-briefDetails">
+                                            Lorem ipsum dolor semit nulla ut
+                                            sapien ui Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Deleniti
+                                            neque perspiciatis animi mollitia ad consequatur delectus, quasi culpa
+                                            amet
+                                            doloremque excepturi soluta fugit eligendi fuga explicabo incidunt,
+                                            molestias debitis labore....</td>
+                                        <td class="actions"><a href="#" class="trigger"><img
+                                                    src="images/Group 268.svg" /></a>
+                                            <a href="#" class="instructor-delete"><img
+                                                    src="images/icons-utility-close-copy.svg" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Spock</td>
+                                        <td>23 / 1 / 2022</td>
+                                        <td class="instructor-email">jim@enterprise.com</td>
+                                        <td>
+                                            <div class="instructor-category-info">Development & coding</div>
+                                            <div class="instructor-category-no">1</div>
+                                        </td>
+                                        <td class="instructor-briefDetails">
+                                            Lorem ipsum dolor semit nulla ut
+                                            sapien ui Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Deleniti
+                                            neque perspiciatis animi mollitia ad consequatur delectus, quasi culpa
+                                            amet
+                                            doloremque excepturi soluta fugit eligendi fuga explicabo incidunt,
+                                            molestias debitis labore....</td>
+                                        <td class="actions"><a href="#" class="trigger"><img
+                                                    src="images/Group 268.svg" /></a>
+                                            <a href="#" class="instructor-delete"><img
+                                                    src="images/icons-utility-close-copy.svg" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Hikaru Sulu</td>
+                                        <td>23 / 1 / 2022</td>
+                                        <td class="instructor-email">hikaru@enterprise.com</td>
+                                        <td>
+                                            <div class="instructor-category-info">Development & coding</div>
 
-                                                <a href="#"><img src="images/delete.svg" /></a></td>
-                                        </tr>
-                                        <tr class="table-data">
-                                            <td><input type="checkbox" /></td>
-                                            <td></td>
-                                            <td>Course Manager</td>
-                                            <td>6</td>
-                                            <td>27/01/2022</td>
-                                            <td class="actions"><a href="#" class="trigger"><img
-                                                        src="images/eye.svg" /></a>
-                                                <a href="#"><img src="images/Group 90.svg" /></a>
+                                        </td>
+                                        <td class="instructor-briefDetails">
+                                            Lorem ipsum dolor semit nulla ut
+                                            sapien ui Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Deleniti
+                                            neque perspiciatis animi mollitia ad consequatur delectus, quasi culpa
+                                            amet
+                                            doloremque excepturi soluta fugit eligendi fuga explicabo incidunt,
+                                            molestias debitis labore....</td>
+                                        <td class="actions"><a href="#" class="trigger"><img
+                                                    src="images/Group 268.svg" /></a>
+                                            <a href="#" class="instructor-delete"><img
+                                                    src="images/icons-utility-close-copy.svg" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
 
-                                                <a href="#"><img src="images/delete.svg" /></a></td>
-                                        </tr>
-
-                                    </tbody>
-
-                                </table>
+                            </table>
 
 
-                                <table style="width: 100%;padding-bottom: 150px;" cellspacing="0"
-                                    class="user-management-table" id="intructorRatings" data-tab-info>
-                                    <tbody>
-                                        <tr class="user-details-tab">
-                                            <td><input type="checkbox" /></td>
-                                            <td id="no">Sr No.</td>
-                                            <td id="title">Role title<img src="images/Union 1.svg" alt="sort img" />
-                                            </td>
-                                            <td id="users">No. of Users<img src="images/Union 1.svg" alt="sort img" />
-                                            </td>
-                                            <td id="created">Created On<img src="images/Union 1.svg" alt="sort img" />
-                                            </td>
-                                            <td></td>
-                                        </tr>
+                            <table style="width: 100%;padding-bottom: 150px;" cellspacing="0"
+                                class="user-management-table" id="intructorRatings" data-tab-info>
+                                <tbody>
 
-                                        <tr class="table-data">
-                                            <td><input type="checkbox" /></td>
-                                            <td>1</td>
-                                            <td>Admin</td>
-                                            <td>2</td>
-                                            <td>27/01/2022</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr class="table-data">
-                                            <td><input type="checkbox" /></td>
-                                            <td>2</td>
-                                            <td>Manager</td>
-                                            <td>6</td>
-                                            <td>27/01/2022</td>
-                                            <td class="actions"><a href="#" class="trigger"><img
-                                                        src="images/eye.svg" /></a>
-                                                <a href="#"><img src="images/Group 90.svg" /></a>
-                                                <a href="#"><img src="images/delete.svg" /></a></td>
-                                        </tr>
-                                        <tr class="table-data">
-                                            <td><input type="checkbox" /></td>
-                                            <td>3</td>
-                                            <td>Instructor</td>
-                                            <td>6</td>
-                                            <td>27/01/2022</td>
-                                            <td class="actions"><a href="#" class="trigger"><img
-                                                        src="images/eye.svg" /></a>
-                                                <a href="#"><img src="images/Group 90.svg" /></a>
-                                                <a href="#"><img src="images/delete.svg" /></a></td>
-                                        </tr>
+                                </tbody>
 
-                                        <tr class="table-data">
-                                            <td><input type="checkbox" /></td>
-                                            <td></td>
-                                            <td>Course Manager</td>
-                                            <td>6</td>
-                                            <td>27/01/2022</td>
-                                            <td class="actions"><a href="#" class="trigger"><img
-                                                        src="images/eye.svg" /></a>
-                                                <a href="#"><img src="images/Group 90.svg" /></a>
+                            </table>
 
-                                                <a href="#"><img src="images/delete.svg" /></a></td>
-                                        </tr>
-
-                                    </tbody>
-
-                                </table>
-                            </div>
 
                         </div>
                     </div>
@@ -222,7 +242,7 @@
 
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
-                
+
                 const target = document
                     .querySelector(tab.dataset.tabValue);
 
@@ -230,8 +250,17 @@
                     tabInfo.classList.remove('intructor-active')
                 })
                 target.classList.add('intructor-active');
+                let table = document.getElementsByClassName('intructor-active');
+
             })
         })
+        $(".instructors-tabs td a").on("click", function () {
+
+            $(".instructors-tabs td a").each(() => {
+                $(".instructors-tabs td a").removeClass("intructor-active-tab");
+            });
+            $(this).addClass("intructor-active-tab");
+        });
     </script>
 
 </body>
