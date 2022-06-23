@@ -64,132 +64,212 @@
 
                     <div class="main">
                         <h1 class="page-heading">MANAGE COURSES > CREATE A COURSE</h1>
-                        <div class="page-content">
-                            <form class="manageCourse-form">
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Course title *</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <input type="text" id="manageCourse-courseTitle" />
-                                    </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Course description *</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <textarea id="manageCourse-courseDesc"></textarea>
-                                    </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Course requirements *</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <textarea id="manageCourse-courseRequirement"></textarea>
-                                    </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Major category *</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <input type="text" id="manageCourse-courseCategory" />
-                                    </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Sub category *</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <input type="text" id="manageCourse-courseSubCategory" />
-                                    </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Instructor name *</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <select id="manageCourse-courseInstructor">
-                                            <option>Instructor 1</option>
-                                            <option>Instructor 2</option>
-                                            <option>Instructor 3</option>
-                                            <option>Instructor 4</option>
+                        <ul id="progressbar">
+                            <li>
+                                <a class="active" data-tab-value="#basic-details">
+                                    <span>1</span>
+                                    <div>Basic Details</div>
+                                </a>
+                            </li>
 
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Course thumbnail *</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <div class="course-thumnail-wrapper">
-                                            <div class="courseThumnailInput">
-                                                <input type="file" id="courseThumnail-img" name="files"
-                                                    style="display: none;" />
-                                                <label for="courseThumnail-img"><span
-                                                        class="course-plus-icon">&#43;</span>
-                                                    Click here to upload or drag an image file here</label>
-                                                <div id="courseThumnail-name"></div>
+                            <li> <a data-tab-value="#course-details">
+                                    <span>2</span>
+                                    <div>Course Details</div>
+                                </a> </li>
+                            <li> <a data-tab-value="#course-preview">
+                                    <span>3</span>
+                                    <div>Course Preview</div>
+                                </a></li>
+                        </ul>
+                        <div class="form-outer">
+                            <form>
+
+                                <div class="form-active page-content" data-tab-info id="basic-details">
+                                    <form class="manageCourse-form">
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Course title *</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <input type="text" id="manageCourse-courseTitle" />
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Course video preview</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <div class="course-videoPreview-wrapper">
-                                            <div class="courseVideoPreviewInput">
-                                                <input type="file" id="courseVideoPreview-img" name="files"
-                                                    style="display: none;" />
-                                                <label for="courseVideoPreview-img"><span
-                                                        class="course-plus-icon">&#43;</span>
-                                                    Click here to upload or drag an image file here</label>
-                                                <div id="courseVideoPreview-name"></div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Course description *</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <textarea id="manageCourse-courseDesc"></textarea>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Course requirements *</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <textarea id="manageCourse-courseRequirement"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Major category *</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <input type="text" id="manageCourse-courseCategory" />
+                                            </div>
+                                        </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Sub category *</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <input type="text" id="manageCourse-courseSubCategory" />
+                                            </div>
+                                        </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Instructor name *</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <select id="manageCourse-courseInstructor">
+                                                    <option>Select Instructor name</option>
+                                                    <option value="instructor1">Instructor 1</option>
+                                                    <option value="instructor2">Instructor 2</option>
+                                                    <option value="instructor3">Instructor 3</option>
+                                                    <option value="instructor4">Instructor 4</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Course thumbnail *</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <div class="course-thumnail-wrapper">
+                                                    <div class="courseThumnailInput">
+                                                        <input type="file" id="courseThumnail-img" name="files"
+                                                            style="display: none;" />
+                                                        <label for="courseThumnail-img"><span
+                                                                class="course-plus-icon">&#43;</span>
+                                                            Click here to upload or drag an image file here</label>
+                                                        <div id="courseThumnail-name"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Course video preview</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <div class="course-videoPreview-wrapper">
+                                                    <div class="courseVideoPreviewInput">
+                                                        <input type="file" id="courseVideoPreview-img" name="files"
+                                                            style="display: none;" />
+                                                        <label for="courseVideoPreview-img"><span
+                                                                class="course-plus-icon">&#43;</span>
+                                                            Click here to upload or drag an image file here</label>
+                                                        <div id="courseVideoPreview-name"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Certificate</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <input type="radio" id="yes" name="fav_language">
+                                                <label for="yes"
+                                                    style="font-weight: normal; padding-right: 125px;">Yes</label>
+                                                <input type="radio" id="no" name="fav_language">
+                                                <label for="no" style="font-weight: normal;">No</label>
+                                            </div>
+                                        </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label>Course price</label>
+                                            </div>
+                                            <div class="course-form-input">
+                                                <input type="text" id="manageCourse-coursePrice"
+                                                    style="margin-right: 30px;" />
+                                                <input type="checkbox" id="free" name="price">
+                                                <label for="free" style="font-weight: normal; padding-right: 50px;">
+                                                    Free</label>
+                                                <input type="checkbox" id="basic" name="price">
+                                                <label for="basic" style="font-weight: normal; padding-right: 50px;">
+                                                    Basic</label>
+                                                <input type="checkbox" id="premium" name="price">
+                                                <label for="premium" style="font-weight: normal;">
+                                                    Premium</label>
+                                            </div>
+                                        </div>
+                                        <div class="course-form-element">
+                                            <div class="course-form-label">
+                                                <label></label>
+                                            </div>
+                                            <div class="course-form-input saveBtn">
+                                                <button class="saveCourseBtn ">Save As Draft</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Certificate</label>
+
+                                <div class="tab form-active " data-tab-info id="course-details">
+                                    <div class="course-details">
+                                        <h3>COURSE DETAILS</h3>
+                                        <div class="course-plan-module-wrapper">
+                                            <a class="course-modules">
+                                                <div>
+                                                    <div class="course-module-img"><img src="images/Group 269.svg"
+                                                            alt="module-img" /></div>
+                                                    <h4>Add Modules</h4>
+                                                    <p>Make the entire course structure by adding modules and chapters
+                                                        in
+                                                        it.
+                                                        These will be accessed by the student in their journey to learn
+                                                        the
+                                                        topic.</p>
+                                                </div>
+                                            </a>
+                                            <a class="course-add-plan">
+                                                <div>
+                                                    <div class="course-plan-img"><img src="images/Group 270.svg"
+                                                            alt="module-img" />
+                                                    </div>
+                                                    <h4>Add Plan</h4>
+                                                    <p>This plan is all about the sequence of learning. This plan tells
+                                                        the
+                                                        student about how they are going to learn and what they need to
+                                                        know
+                                                        before unlocking further.</p>
+                                                </div>
+                                            </a>
+
+                                        </div>
                                     </div>
-                                    <div class="course-form-input">
-                                        <input type="radio" id="yes" name="fav_language">
-                                        <label for="yes" style="font-weight: normal;">Yes</label>
-                                        <input type="radio" id="no" name="fav_language">
-                                        <label for="no" style="font-weight: normal;">No</label>
+
+                                    <div class="module-wrapper">
+                                        <h3>Module name</h3>
+                                        <input type="text" id="module-name-input" />
+                                        <button id="add-module-name"><img
+                                                src="images/icons-utility-new-copy.svg" /></button>
+                                        <ul id="module-name-list"></ul>
                                     </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label>Course price</label>
-                                    </div>
-                                    <div class="course-form-input">
-                                        <input type="text" id="manageCourse-coursePrice" />
-                                        <input type="checkbox" id="free" name="price">
-                                        <label for="free" style="font-weight: normal;"> Free</label>
-                                        <input type="checkbox" id="basic" name="price">
-                                        <label for="basic" style="font-weight: normal;"> Basic</label>
-                                        <input type="checkbox" id="premium" name="price">
-                                        <label for="premium" style="font-weight: normal;"> Premium</label>
-                                    </div>
-                                </div>
-                                <div class="course-form-element">
-                                    <div class="course-form-label">
-                                        <label></label>
-                                    </div>
-                                    <div class="course-form-input saveBtn">
-                                        <button class="saveCourseBtn">Save As Draft</button>
+
+                                    <div class="chapter-wrapper">
+                                        <h3>Chapter name</h3>
+                                        <input type="text" id="chapter-name-input" />
+                                        <button id="add-chapter-name"><img
+                                                src="images/icons-utility-new-copy.svg" /></button>
+                                        <ul id="chapter-name-list"></ul>
                                     </div>
                                 </div>
                             </form>
-
                         </div>
+
+
                     </div>
                 </div>
 
@@ -206,7 +286,70 @@
 
     <script src="./js/script.js"></script>
     <script>
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+        $(".saveCourseBtn").on("click", function () {
+            alert("hi")
+            tabInfos.each(tabInfo => {
+                $(this).removeClass('form-active')
+            })
+            $('#course-details').classList.add('form-active');
+        })
+        tabs.forEach(tab => {
+            // $("saveCourseBtn").('click', () => {
 
+            //     const target = document
+            //         .querySelector(tab.dataset.tabValue);
+
+            //     tabInfos.forEach(tabInfo => {
+            //         tabInfo.classList.remove('form-active')
+            //     }) target.classList.add('form-active');
+            //     let table = document.getElementsByClassName('form-active');
+
+            // })
+
+        })
+        // $(".user-management-tabs td a").on("click", function () {
+
+        //     $(".user-management-tabs td a").each(() => {
+        //         $(".user-management-tabs td a").removeClass("userManagement-active-tab");
+        //     });
+        //     $(this).addClass("userManagement-active-tab");
+        // });
+        $(document).ready(function () {
+            $('#add-module-name').click(function () {
+                var a = document.getElementById("module-name-list");
+                var candidate = document.getElementById("module-name-input");
+                var li = document.createElement("li");
+                var img = document.createElement("img");
+                var achor = document.createElement("a");
+                li.setAttribute('id', candidate.value);
+                img.setAttribute('id', candidate.value);
+                img.setAttribute('src', "images/delete.svg");
+                li.appendChild(document.createTextNode(candidate.value));
+                var newLI = a.appendChild(li);
+                var ac = newLI.appendChild(achor);
+                ac.appendChild(img);
+
+            })
+            var element=$('#module-name-list li a');
+            // $('#module-name-list li').click(function () {
+            //     alert("hiuhiui")
+            // })
+            element.addEventListener('click')
+        })
+
+
+
+        // Creating a function to remove item from list
+        function removeItem() {
+
+            // Declaring a variable to get select element
+            var a = document.getElementById("module-name-list");
+            var candidate = document.getElementById("candidate");
+            var item = document.getElementById(candidate.value);
+            a.removeChild(item);
+        }
     </script>
 
 </body>
