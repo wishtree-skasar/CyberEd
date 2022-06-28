@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEd-Login</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.min.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/manageCertificate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="home-logo">
+                    <p class="logo">Cyber<span class="logo-ed">Ed</span><span class="logo-io">.io</span></p>
+                    <div class="login-user"><i class="fa-solid fa-circle-user"></i></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="main-wrapper">
+                    <div class="navbar">
+                        <div class="navigation">
+                            <ul class="nav-list">
+                                <li><a href="home-page1.html"><i class="fa-solid fa-tree"></i></a>
+                                    <span class="tooltiptext">Dashboard</span></li>
+                                <li><a href="userManagement.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">User Management</span></li>
+                                <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
+                                    <span class="tooltiptext">Manage Categories</span></li>
+                                <li><a href="manageCourses.html"><i class="fa-solid fa-file-lines"></i></a>
+                                    <span class="tooltiptext">Manage Course</span></li>
+                                <li><a href="manageGroup.html"><i class="fa-solid fa-bookmark"></i></a>
+                                    <span class="tooltiptext">Bookmark</span></li>
+                                <li><a href="manageInstructors.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">Manage Instructors</span></li>
+                                <li><a href="manageCertificate.html"><i
+                                            class="fa-solid fa-square-poll-vertical"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-folder"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-gear"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bullhorn"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <h1 class="page-heading">MANAGE GROUPS</h1>
+                        <div class="page-content">
+                            <table style="width: 100%;" cellspacing="0">
+                                <tr class="manage-certificate-tabs">
+                                    <td class="group-tab1"><a data-tab-value="#manage-certificates"
+                                            class="certificate-active-tab">Manage Certificates</a>
+                                    </td>
+                                    <td class="group-tab2"><a data-tab-value="#manage-badges">Manage Badges</a></td>
+                                </tr>
+                            </table>
+
+                            <div class="certificate-wrapper active-tab" id="manage-certificates" data-tab-info>
+                                <div>
+                                    <a href="#" class="certificate-back"><i class="fa-solid fa-angle-left"></i>Back</a>
+                                </div>
+                                <h3>Create A Certificate</h3>
+                                <div class="certifcate-form">
+                                    <div class="certifcate-form-label">
+                                        <label for="certificate-name">Certificate name*</label>
+                                    </div>
+                                    <div class="certifcate-form-input">
+                                        <input type="text" id="certificate-name" name="certificate-name"
+                                            placeholder="Excellence certificate" />
+                                    </div>
+                                </div>
+                                <div class="certifcate-form">
+                                    <div class="certifcate-form-label">
+                                        <label for="link-to-course">Link to course / learning path *</label>
+                                    </div>
+                                    <div class="certifcate-form-input">
+                                        <select id="link-to-course">
+                                            <option>Select </option>
+                                            <option value="link1">Link1 </option>
+                                            <option value="link2">Link2 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="certifcate-logo-wrapper">
+                                    <div class="certificate-fileds">
+                                        <div class="certifcate-form-label">
+                                            <label>Logo and text *</label>
+                                        </div>
+                                        <div class="certifcate-form-input">
+                                            <div class="logo-img-wrapper">
+                                                <div class="logoImgInput">
+                                                    <input type="file" id="logo-img" name="files"
+                                                        style="display: none;" />
+                                                    <label for="logo-img"><span class="logoImg-plus-icon">&#43;</span>
+                                                        Click here to upload or drag an image file here</label>
+                                                    <div id="logoImg-name"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="certifcate-form-label">
+                                            <label for="certificate-of">Certificate of *</label>
+                                        </div>
+                                        <div class="certifcate-form-input">
+                                            <input type="text" id="certificate-of"
+                                                placeholder="Certificate of Completion" />
+                                        </div>
+                                        <div class="certifcate-form-label">
+                                            <label for="subtext">Subtext *</label>
+                                        </div>
+                                        <div class="certifcate-form-input">
+                                            <input type="text" id="subtext" placeholder="This is to certify that" />
+                                        </div>
+                                        <div class="certifcate-form-label">
+                                            <label for="description">Description *</label>
+                                        </div>
+                                        <div class="certifcate-form-input">
+                                            <input type="text" id="description" placeholder="has successfully" />
+                                        </div>
+                                        <div class="certifcate-form-label">
+                                            <label for="author-name">Name of author</label>
+                                        </div>
+                                        <div class="certifcate-form-input">
+                                            <input type="text" placeholder="Albus Dumbeldore" id="author-name" />
+                                        </div>
+                                        <div class="certifcate-form-label">
+                                            <label for="author-designation">Designation of author</label>
+                                        </div>
+                                        <div class="certifcate-form-input">
+                                            <input type="text" placeholder="President" id="author-designation" />
+                                        </div>
+                                    </div>
+
+                                    <div class="certificate-image">
+                                        <img src="images/Group 262.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table style="width: 100%;padding-bottom: 150px;" data-tab-info cellspacing="0"
+                                id="manage-badges" class="user-management-table
+                                ">
+                                <tr>
+                                    <td>No REsult found</td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('active-tab')
+                })
+                target.classList.add('active-tab');
+                let table = document.getElementsByClassName('active-tab');
+
+            })
+        })
+        $(".manage-certificate-tabs td a").on("click", function () {
+
+            $(".manage-certificate-tabs td a").each(() => {
+                $(".manage-certificate-tabs td a").removeClass("certificate-active-tab");
+            });
+            $(this).addClass("certificate-active-tab");
+        });
+    </script>
+
+</body>
+
+</html>

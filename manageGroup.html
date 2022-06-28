@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEd-Login</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.min.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/manageGroup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="home-logo">
+                    <p class="logo">Cyber<span class="logo-ed">Ed</span><span class="logo-io">.io</span></p>
+                    <div class="login-user"><i class="fa-solid fa-circle-user"></i></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="main-wrapper">
+                    <div class="navbar">
+                        <div class="navigation">
+                            <ul class="nav-list">
+                                <li><a href="home-page1.html"><i class="fa-solid fa-tree"></i></a>
+                                    <span class="tooltiptext">Dashboard</span></li>
+                                <li><a href="userManagement.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">User Management</span></li>
+                                <li><a href="manageCategories.html"><i class="fa-solid fa-users"></i></a>
+                                    <span class="tooltiptext">Manage Categories</span></li>
+                                <li><a href="manageCourses.html"><i class="fa-solid fa-file-lines"></i></a>
+                                    <span class="tooltiptext">Manage Course</span></li>
+                                <li><a href="manageGroup.html"><i class="fa-solid fa-bookmark"></i></a>
+                                    <span class="tooltiptext">Bookmark</span></li>
+                                <li><a href="manageInstructors.html"><i class="fa-solid fa-user"></i></a>
+                                    <span class="tooltiptext">Manage Instructors</span></li>
+                                <li><a href="manageCertificate.html"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-folder"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-gear"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                                <li><a href="#"><i class="fa-solid fa-bullhorn"></i></a>
+                                    <span class="tooltiptext">Manage</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <h1 class="page-heading">MANAGE GROUPS</h1>
+                        <div class="page-content">
+                            <table style="width: 100%;" cellspacing="0">
+                                <tr class="manage-group-tabs">
+                                    <td class="group-tab1"><a data-tab-value="#manage-group">Manage Groups</a></td>
+                                    <td class="group-tab2"><a data-tab-value="#create-reqquest"
+                                            class="manage-group-active-tab">Group Create
+                                            Requests</a></td>
+                                    <td class="group-tab3"><a data-tab-value="#join-requests">Group Join Requests</a>
+                                    </td>
+                                    <td class="group-tab4">
+                                        <div class="user-management-serach-box">
+                                            <input type="text" placeholder="Search group here..." />
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            </table>
+
+                            <table style="width: 100%;padding-bottom: 150px;" cellspacing="0" id="create-reqquest"
+                                class="manage-group-active" data-tab-info>
+
+                                <tbody>
+                                    <tr class="manage-group-tab">
+
+                                        <td id="manage-group-name">Group Name<img src="images/Union 1.svg"
+                                                alt="sort img" /></td>
+                                        <td id="manage-group-desc">Description<img src="images/Union 1.svg"
+                                                alt="sort img" /></td>
+                                        <td id="manage-group-category">Category<img src="images/Union 1.svg"
+                                                alt="sort img" /></td>
+                                        <td id="manage-group-action"></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Project Management Techniques</td>
+                                        <td class="manage-course-description">This group provides easy shortcuts to
+                                            approaches on Project Lorem ipsum
+                                            dolor sit amet.</td>
+                                        <td>
+                                            <div class="course-category-info">Development & coding</div>
+                                            <div class="course-category-no">3</div>
+                                        </td>
+                                        <td class="actions">
+                                            <a href="#"><img src="images/accept.svg" /></a>
+                                            <a href="#"><img src="images/reject.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Project Management Techniques</td>
+                                        <td class="manage-course-description">This group provides easy shortcuts to
+                                            approaches on Project Lorem ipsum
+                                            dolor sit amet.</td>
+                                        <td>
+                                            <div class="course-category-info">Development & coding</div>
+                                            <div class="course-category-no">22</div>
+                                        </td>
+                                        <td class="actions">
+                                            <a href="#"><img src="images/accept.svg" /></a>
+                                            <a href="#"><img src="images/reject.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Project Management Techniques</td>
+                                        <td class="manage-course-description">This group provides easy shortcuts to
+                                            approaches on Project Lorem ipsum
+                                            dolor sit amet.</td>
+                                        <td>
+                                            <div class="course-category-info">Development & coding</div>
+                                            <div class="course-category-no">3</div>
+                                        </td>
+                                        <td class="actions">
+                                            <a href="#"><img src="images/accept.svg" /></a>
+                                            <a href="#"><img src="images/reject.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Project Management Techniques</td>
+                                        <td class="manage-course-description">This group provides easy shortcuts to
+                                            approaches on Project Lorem ipsum
+                                            dolor sit amet.</td>
+                                        <td>
+                                            <div class="course-category-info">Development & coding</div>
+                                            <div class="course-category-no">1</div>
+                                        </td>
+                                        <td class="actions">
+                                            <a href="#"><img src="images/accept.svg" /></a>
+                                            <a href="#"><img src="images/reject.svg" /></a></td>
+                                    </tr>
+                                    <tr class="table-data">
+                                        <td>Project Management Techniques</td>
+                                        <td class="manage-course-description">This group provides easy shortcuts to
+                                            approaches on Project Lorem ipsum
+                                            dolor sit amet.</td>
+                                        <td>
+                                            <div class="course-category-info">Development & coding</div>
+
+                                        </td>
+                                        <td class="actions">
+                                            <a href="#"><img src="images/accept.svg" /></a>
+                                            <a href="#"><img src="images/reject.svg" /></a></td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                            <table style="width: 100%;padding-bottom: 150px;" data-tab-info cellspacing="0"
+                                id="manage-group" class="user-management-table
+                                ">
+                                <tr>
+                                    <td>No REsult found</td>
+                                </tr>
+
+                            </table>
+
+                            <table style="width: 100%;padding-bottom: 150px;" cellspacing="0" id="join-requests"
+                                class="user-management-table" data-tab-info>
+                                <tr>
+                                    <td>No REsult found</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('manage-group-active')
+                })
+                target.classList.add('manage-group-active');
+                let table = document.getElementsByClassName('manage-group-active');
+
+            })
+        })
+        $(".manage-group-tabs td a").on("click", function () {
+
+            $(".manage-group-tabs td a").each(() => {
+                $(".manage-group-tabs td a").removeClass("manage-group-active-tab");
+            });
+            $(this).addClass("manage-group-active-tab");
+        });
+    </script>
+
+</body>
+
+</html>

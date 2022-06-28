@@ -1,4 +1,27 @@
 $(document).ready(function () {
+  $(".next").click(function () {
+    var current_tab = $(this).parent();
+    var next_tab = $(this).parent().next();
+
+    current_tab.hide();
+    next_tab.show();
+    $("#progressbar li").each(function () {
+      $(this).removeClass("active");
+    });
+    $("#progressbar li").eq($("fieldset").index(next_tab)).addClass("active");
+    $("#progressbar li")
+      .eq($("fieldset").index(current_tab))
+      .addClass("completed");
+    $("#progressbar li").each(function () {
+      if ($(this).hasClass("completed")) {
+        $("#progressbar li.completed span:first-child").text("");
+        $("#progressbar li.completed span:first-child").html(
+          "<i class='fa-solid fa-check'></i>"
+        );
+      }
+    });
+  });
+
   $("ul > li > a").each(function () {
     var url = window.location.href;
     var href = $(this).prop("href");
@@ -6,45 +29,11 @@ $(document).ready(function () {
       $(this).addClass("current");
     }
   });
-  const userData = [
-    {
-      no: 1,
-      title: "Admin",
-      users: 2,
-      createdOn: "27/01/2022",
-    },
-    {
-      no: 2,
-      title: "Manager",
-      users: 6,
-      createdOn: "27/01/2022",
-    },
-    {
-      no: 3,
-      title: "Instructor",
-      users: 6,
-      createdOn: "27/01/2022",
-    },
-    {
-      no: 4,
-      title: "Group Manager",
-      users: 6,
-      createdOn: "27/01/2022",
-    },
-    {
-      no: 5,
-      title: "Course Manager",
-      users: 6,
-      createdOn: "27/01/2022",
-    },
-  ];
-  function getCells(data, type) {
-    return data.map((cell) => `<${type}>${cell.title}</${type}>`).join("");
-  }
-  function createUserDetailsBody(Data) {
-    return Data.map((row) => `<tr>${row.title}</tr>`).join("");
-  }
-  // document.body.insertAdjacentHTML("beforeend", createUserDetailsBody(userData));
+  $(".course-modules").click(function () {
+    $(".course-plan-module-wrapper").css({ display: "none" });
+    $(".add-module-wrapper").css({ opacity: "1" });
+    $(".saveCourseContent").css({ display: "block" });
+  });
 
   $(".category-info-show").on("click", function () {
     if ($("#coursers-detailsInfo").is(":hidden")) {

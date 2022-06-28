@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+[data-tab-info] {
+  display: none;
+}
+
+.active-tab[data-tab-info] {
+  display: block;
+}
+.manage-certificate-tabs {
+  color: #95989a;
+}
+.manage-certificate-tabs td {
+  border-bottom: 1px solid #95989a;
+  padding: 20px 0;
+  padding-left: 20px;
+}
+.certifcate-form {
+  display: flex;
+  padding-bottom: 30px;
+}
+.certifcate-form-label {
+  flex: 0 0 20%;
+  max-width: 20%;
+  color: #343434;
+  font-size: 14px;
+  font-weight: 600;
+}
+.certifcate-form-input {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.certificate-active-tab {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #06529c;
+  color: #06529c;
+  font-weight: 600;
+}
+.certificate-back {
+  color: #343434;
+  text-decoration: none;
+  padding-top: 30px;
+  display: inline-block;
+  padding-bottom: 28px;
+}
+.certificate-wrapper h3 {
+  color: #06529c;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.certificate-back i {
+  padding-right: 10px;
+}
+.certificate-wrapper {
+  padding: 0 20px;
+}
+.certifcate-logo-wrapper {
+  display: flex;
+}
+.certificate-fileds,
+.certificate-image {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.certificate-fileds {
+  display: flex;
+  flex-wrap: wrap;
+}
+.certificate-fileds .certifcate-form-label {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.certificate-fileds .certifcate-form-input {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+#certificate-name,
+#link-to-course {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding-left: 20px;
+  width: 100%;
+  max-width: 540px;
+  height: 40px;
+}
+#link-to-course {
+  background: none;
+}
+input:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+#certificate-of,
+#subtext,
+#description,
+#author-name,
+#author-designation {
+  border: none;
+  border: 1px solid #dedede;
+  height: 40px;
+  width: 100%;
+  max-width: 305px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+.certificate-image {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 40%;
+}
+.certificate-image img {
+  padding: 24px 58px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.logo-img-wrapper {
+  max-width: 300px;
+  width: 100%;
+  height: 150px;
+  border: 2px dashed #dedede;
+  border-radius: 10px;
+}
+.logo-img-wrapper label {
+  color: #9e9e9e;
+  font-size: 14px;
+  width: 100%;
+  max-width: 182px;
+}
+.logoImgInput {
+  width: 100%;
+  max-width: 182px;
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+}
+#logoImg-name {
+  position: absolute;
+  right: -50px;
+  bottom: -60px;
+}
+.logoImg-plus-icon {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: normal;
+}
