@@ -42,9 +42,11 @@ body {
 }
 .login-user {
   padding-right: 30px;
+  font-size: 25px;
 }
 .logo {
   font-size: 16px;
+  padding-left: 20px;
 }
 .logo-ed {
   font-weight: bold;
@@ -56,7 +58,7 @@ body {
 /* navigation */
 .navigation {
   width: 70px;
-  max-height: 710px;
+  height: 710px;
   background: #1b618c;
   border-radius: 0px 30px 30px 0px;
 }
@@ -78,17 +80,15 @@ body {
   position: relative;
   padding: 20px 0;
 }
-.current {
+.current i {
   background: #fff;
-  width: 30px;
-  height: 28px;
   border-radius: 20px;
   margin: 0 auto;
   padding-top: 2px;
-}
-.current i {
   color: #1b618c;
+  padding: 8px;
 }
+
 .tooltiptext {
   display: none;
   color: #06529c;
@@ -128,9 +128,33 @@ body {
   padding-top: 15px;
 }
 .page-content {
-  max-width: 100%;
+  max-width: calc(100% - 30px);
   box-shadow: 0px 0px 6px #00000014;
-  margin-right: 20px;
-  /* padding: 0 20px; */
   margin-bottom: 10px;
+}
+.dashobard-container {
+  box-shadow: 0px 0px 6px #00000014;
+  height: 90%;
+  margin-right: 30px;
+}
+
+/* toaster message */
+.toaster-wrapper {
+  display: none;
+}
+.toaster-meassage {
+  position: absolute;
+  right: 0;
+  top: 90vh;
+  margin-right: 30px;
+  background: #cddceb;
+  width: 100%;
+  margin-bottom: 10px;
+  max-width: 350px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-around;
+  color: #343434;
+  font-size: 14px;
+  font-weight: normal;
 }

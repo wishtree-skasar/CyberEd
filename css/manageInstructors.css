@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 [data-tab-info] {
   display: none;
 }
 
 .intructor-active[data-tab-info] {
-  display: block;
+  display: table;
 }
 .instructors-tabs {
   display: flex;
@@ -16,6 +19,14 @@
   flex: 0 0 20%;
   max-width: 20%;
   color: #919191;
+}
+.instructor-tab1,
+#intructorRequests tr td:first-child {
+  padding-left: 20px;
+}
+
+#intructorRequests tr td:last-child {
+  padding-right: 20px;
 }
 .instructor-tab3 {
   flex: 0 0 60%;
@@ -51,12 +62,15 @@
 #category {
   width: 25%;
 }
-#date-request,
-#email {
+#date-request {
   width: 15%;
 }
+#email {
+  width: 14%;
+  text-overflow: ellipsis;
+}
 #instructor-action {
-  width: 10%;
+  width: 11%;
 }
 #intructorRequests .table-data {
   transition: 0.4s all;
@@ -85,11 +99,7 @@
   padding: 8px 0;
   text-align: center;
 }
-.instructor-delete {
-  border: 1px solid #06529c;
-  border-radius: 20px;
-  padding: 5px 9px;
-}
+
 .instructor-delete img {
   padding: 0 !important;
 }

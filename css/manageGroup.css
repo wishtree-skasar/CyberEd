@@ -3,7 +3,7 @@
 }
 
 .manage-group-active[data-tab-info] {
-  display: block;
+  display: table;
 }
 .manage-group-tabs {
   color: #95989a;

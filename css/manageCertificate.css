@@ -16,6 +16,9 @@
   padding: 20px 0;
   padding-left: 20px;
 }
+.group-tab1 {
+  width: 15%;
+}
 .certifcate-form {
   display: flex;
   padding-bottom: 30px;
@@ -71,10 +74,12 @@
 .certificate-fileds .certifcate-form-label {
   flex: 0 0 40%;
   max-width: 40%;
+  padding-bottom: 20px;
 }
 .certificate-fileds .certifcate-form-input {
   flex: 0 0 60%;
   max-width: 60%;
+  padding-bottom: 20px;
 }
 #certificate-name,
 #link-to-course {
@@ -110,6 +115,7 @@ select:focus-visible {
   border-radius: 5px;
   position: relative;
   padding-bottom: 40%;
+  margin-bottom: 20px;
 }
 .certificate-image img {
   padding: 24px 58px;
@@ -123,6 +129,7 @@ select:focus-visible {
   height: 150px;
   border: 2px dashed #dedede;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .logo-img-wrapper label {
   color: #9e9e9e;
@@ -148,4 +155,95 @@ select:focus-visible {
   font-size: 60px;
   line-height: 1;
   font-weight: normal;
+}
+.signature-color-wrappper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.signature-wrapper,
+.color-wrapper {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.color-wrapper {
+  display: flex;
+}
+.border-color-wrapper {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.border-color-wrapper label,
+.border-values-wrapper label {
+  font-size: 14px;
+  font-weight: 600;
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.border-values-wrapper label {
+  width: 18%;
+}
+.border-values-wrapper {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+#border-value-r,
+#border-value-b {
+  display: inline-block;
+  margin-right: 10px;
+}
+.border-value-rgba label {
+  text-align: center;
+}
+#border-value-r,
+#border-value-g,
+#border-value-b,
+#border-value-a {
+  border: none;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  max-width: 60px;
+}
+#border-value-hex {
+  border: none;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  max-width: 179px;
+}
+.signature-wrapper {
+  display: flex;
+}
+.signature-wrapper .certifcate-form-label {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.signature-wrapper .certifcate-form-input {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+#save-certificate {
+  float: right;
+  border: none;
+  background: none;
+  background: #06529c;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: 0.4s all;
+}
+#save-certificate:hover {
+  background: #fff;
+  color: #06529c;
+  border: 1px solid #06529c;
+}
+#right {
+  display: inline-block;
+  margin-left: 125px;
 }

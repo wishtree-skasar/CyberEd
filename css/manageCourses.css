@@ -95,6 +95,7 @@
   text-align: right;
   border: 1px solid transparent;
   transition: 0.4s all;
+  float: right;
 }
 .saveCourseBtn:hover {
   border: 1px solid #06529c;
@@ -153,8 +154,8 @@
 }
 #progressbar li {
   list-style: none;
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 22%;
+  max-width: 22%;
 }
 #progressbar a {
   text-decoration: none;
@@ -164,7 +165,7 @@
   display: flex;
   padding: 0;
   margin: 0;
-  margin-left: 8px;
+  padding-left: 20px;
   padding-bottom: 30px;
 }
 #progressbar span {
@@ -184,6 +185,9 @@
 .active #connect-dots,
 .completed #connect-dots {
   color: #79c4f2;
+}
+#progressbar span:nth-child(1) {
+  margin-left: 20px;
 }
 #progressbar .active span {
   display: inline-block;
@@ -241,6 +245,8 @@
   max-width: 160px;
   height: 40px;
   margin-left: 20px;
+  display: inline-block;
+  margin-right: 10px;
 }
 #add-module-name,
 #add-chapter-name {
@@ -249,6 +255,11 @@
   background: #06529c;
   border-radius: 5px;
   padding: 10px;
+}
+.module-name-wrapper,
+.chapter-input-wrapper {
+  display: flex;
+  padding-top: 10px;
 }
 #module-name-list {
   padding: 0;
@@ -262,6 +273,12 @@
   padding: 10px 0 10px 20px;
   border-radius: 5px;
   margin-bottom: 10px;
+  border: 1px solid transparent;
+}
+
+#module-name-list li:hover {
+  border: 1px solid #06529c;
+  border-radius: 5px;
 }
 #module-name-list li button {
   float: right;
@@ -283,13 +300,13 @@
 }
 .chapter-wrapper,
 .module-wrapper {
-  flex: 0 0 calc(22% - 15px);
-  max-width: 22%;
+  flex: 0 0 calc(23% - 15px);
+  max-width: 23%;
   margin-right: 15px;
 }
 .add-module-desc-table {
-  flex: 0 0 56%;
-  max-width: 56%;
+  flex: 0 0 54%;
+  max-width: 54%;
   box-shadow: 0px 0px 6px #00000014;
   border-radius: 5px;
   padding-top: 20px;
@@ -412,7 +429,7 @@
   max-width: 20%;
 }
 .course-content-btn label {
-  padding: 5px 40px;
+  padding: 5px 30px;
   background: #06529c;
   color: #fff;
   border-radius: 20px;
@@ -434,6 +451,7 @@
 }
 #step-1 {
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 #step-2 {
   box-shadow: none;
@@ -446,6 +464,21 @@
 }
 .saveCourseContent {
   display: none;
+  border: none;
+  background: none;
+  color: #fff;
+  background: #06529c;
+  border-radius: 20px;
+  padding: 5px 20px;
+  float: right;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  transition: 0.4s all;
+}
+.saveCourseContent:hover {
+  background: #fff;
+  color: #06529c;
+  border: 1px solid #06529c;
 }
 .course-preview-wrapper {
   width: 100%;
@@ -483,6 +516,13 @@
   padding: 8px 20px;
   border-radius: 30px;
   background: rgba(27, 97, 140, 0.2);
+  border: 1px solid transparent;
+  transition: 0.4s all;
+}
+.course-status:hover {
+  border: 1px solid rgba(27, 97, 140, 0.2);
+  background: #fff;
+  color: rgba(27, 97, 140, 1);
 }
 .course-preview-wrapper img {
   max-width: 100%;

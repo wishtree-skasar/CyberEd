@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // stepper
   $(".next").click(function () {
     var current_tab = $(this).parent();
     var next_tab = $(this).parent().next();
@@ -22,6 +23,13 @@ $(document).ready(function () {
     });
   });
 
+  // toaster message
+  $(".create-role-btn").click(function () {
+    $(".toaster-wrapper").css("display", "block");
+    $(".toaster-wrapper").fadeOut();
+  });
+
+  //active navigation tab
   $("ul > li > a").each(function () {
     var url = window.location.href;
     var href = $(this).prop("href");
@@ -29,6 +37,7 @@ $(document).ready(function () {
       $(this).addClass("current");
     }
   });
+
   $(".course-modules").click(function () {
     $(".course-plan-module-wrapper").css({ display: "none" });
     $(".add-module-wrapper").css({ opacity: "1" });

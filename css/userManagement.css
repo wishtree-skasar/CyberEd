@@ -45,23 +45,24 @@ input:focus-visible {
   display: flex;
   max-width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 10px;
   /* box-shadow: 0 6px 6px -6px #95989a;
    */
   border-bottom: 1px solid #95989a;
 }
 .user-tab1 {
-  flex: 0 0 9%;
-  max-width: 9%;
+  flex: 0 0 7%;
+  max-width: 7%;
   text-align: left;
   padding-top: 10px;
   color: #919191;
+  padding-left: 20px;
 }
 .user-tab2,
 .user-tab3 {
-  flex: 0 0 8%;
-  max-width: 8%;
+  flex: 0 0 7%;
+  max-width: 7%;
   text-align: center;
   padding-top: 10px;
   color: #919191;
@@ -81,7 +82,10 @@ input:focus-visible {
   max-width: 15%;
   padding-top: 10px;
 }
-
+.user-tab5{
+  flex: 0 0 11%;
+  max-width: 11%;
+}
 .user-details-tab td {
   padding: 10px 0;
   font-size: 14px;
@@ -95,8 +99,11 @@ input:focus-visible {
   padding-left: 10px;
   padding-top: 5px;
 }
-.user-management-table {
-  padding: 0 10px;
+.user-management-table tr td:first-child {
+  padding-left: 20px;
+}
+.user-management-table tr td:last-child {
+  padding-right: 20px;
 }
 .table-data {
   border-bottom: 1px solid lightgray;
@@ -276,7 +283,7 @@ input:focus-visible {
 }
 
 .userManagement-active[data-tab-info] {
-  display: block;
+  display: table;
 }
 .userManagement-active-tab {
   padding-bottom: 15px;
@@ -295,8 +302,12 @@ input:focus-visible {
   width: 25%;
 }
 #usermanagement-users {
-  width: 25%;
+  width: 18%;
 }
 #usermanagement-created {
   width: 25%;
+}
+.user-manage-role-creation {
+  padding-left: 20px;
+  padding-right: 20px;
 }
